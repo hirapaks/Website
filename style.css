@@ -78,9 +78,43 @@ section h2 {
     margin-bottom: 10px;
 }
 
-section p {
+section p, section ul {
     font-size: 1.2em;
     line-height: 1.6;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+section ul li {
+    margin-bottom: 10px;
+}
+
+section ul li img {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product {
+    width: 30%;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
 }
 
 footer {
@@ -104,4 +138,36 @@ footer ul li {
 footer ul li a {
     color: #fff;
     text-decoration: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #444;
 }
